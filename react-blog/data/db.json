@@ -2,15 +2,21 @@
   "blogs": [
     {
       "title": "First Blog",
-      "body": "text for my First Blog",
+      "body": "text for my First Blog text for my First Blog text for my First Blog text for my First Blog text for my First Blog",
       "author": "mario",
       "id": 1
     },
     {
       "title": "Second blog",
-      "body": "text for my second Blog",
+      "body": "text for my second Blog text for my second Blog text for my second Blog text for my second Blog text for my second Blog",
       "author": "mario",
       "id": 2
+    },
+    {
+      "title": "Third news",
+      "body": "jijlhdl slaln",
+      "author": "yoshi",
+      "id": 3
     }
   ]
 }
