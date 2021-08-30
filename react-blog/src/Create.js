@@ -1,10 +1,13 @@
 import React from 'react';
 import {useState} from "react";
+import {useHistory} from "react-router-dom";
 
 function Create(props) {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] =  useState("mario");
+    const history = useHistory();
+
     const handleSubmit = (e) =>{
         e.preventDefault();
         const blog = {title, body, author};
@@ -12,7 +15,9 @@ function Create(props) {
             method: 'POST', 
             headers:{"Content-Type": "application/json"}, 
             body: JSON.stringify(blog)});
+        history.push("/");
     }
+
     return (
         <div className="create">
             <h2>Add a new Blog</h2>
